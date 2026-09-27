@@ -25,9 +25,9 @@ function About() {
           </div>
 
           <div>
-            <h3>🎓 Education</h3>
-            <span>Master of Computer Applications</span>
-          </div>
+  <h3>🎓 Education</h3>
+  <span>BCA Graduate • MCA Student</span>
+</div>
 
           <div>
             <h3>💻 Specialization</h3>
