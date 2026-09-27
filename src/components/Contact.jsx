@@ -1,7 +1,9 @@
-function Contact() {
+import { forwardRef } from "react";
+
+const Contact = forwardRef((props, ref) => {
   return (
     <>
-      <section id="contact" className="contact">
+      <section ref={ref} id="contact" className="contact">
         <h2>Contact Me</h2>
 
         <p className="contact-desc">
@@ -19,6 +21,7 @@ function Contact() {
             <a
               href="https://www.linkedin.com/in/devansh-sarvaiya-a5977541b"
               target="_blank"
+              rel="noreferrer"
             >
               View Profile
             </a>
@@ -29,6 +32,7 @@ function Contact() {
             <a
               href="https://github.com/devanshsarvaiya"
               target="_blank"
+              rel="noreferrer"
             >
               devanshsarvaiya
             </a>
@@ -41,6 +45,6 @@ function Contact() {
       </footer>
     </>
   );
-}
+});
 
 export default Contact;

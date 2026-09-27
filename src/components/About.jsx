@@ -2,16 +2,20 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="about-text">
-        <h2>About Me</h2>
+        <p className="section-label">ABOUT ME</p>
+
+        <h2>Passionate Developer & Lifelong Learner</h2>
 
         <p>
           I'm Devansh Sarvaiya, an MCA student from Nobel University,
-          Junagadh.
+          Junagadh, with a strong passion for React, AI and Full Stack
+          Development.
         </p>
 
         <p>
-          My goal is to become a Professional AI Full Stack Developer by
-          building real-world applications with React, JavaScript and AI.
+          I enjoy building practical web applications, learning modern
+          technologies and preparing myself for freelance projects and software
+          engineering opportunities.
         </p>
 
         <div className="about-info">
@@ -22,17 +26,17 @@ function About() {
 
           <div>
             <h3>🎓 Education</h3>
-            <span>MCA Student</span>
+            <span>Master of Computer Applications</span>
           </div>
 
           <div>
-            <h3>💻 Focus</h3>
-            <span>React • AI • Full Stack</span>
+            <h3>💻 Specialization</h3>
+            <span>React • JavaScript • AI</span>
           </div>
 
           <div>
-            <h3>🚀 Goal</h3>
-            <span>Freelance + Job Ready</span>
+            <h3>🚀 Career Goal</h3>
+            <span>AI Full Stack Developer</span>
           </div>
         </div>
       </div>

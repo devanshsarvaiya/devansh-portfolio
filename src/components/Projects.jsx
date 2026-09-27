@@ -1,6 +1,8 @@
-function Projects() {
+import { forwardRef } from "react";
+
+const Projects = forwardRef((props, ref) => {
   return (
-    <section id="projects" className="projects">
+    <section ref={ref} id="projects" className="projects">
       <h2>Featured Projects</h2>
 
       <p className="project-desc">
@@ -25,6 +27,7 @@ function Projects() {
           <a
             href="https://github.com/devanshsarvaiya/student-management-system"
             target="_blank"
+            rel="noreferrer"
           >
             View GitHub →
           </a>
@@ -34,8 +37,7 @@ function Projects() {
           <h3>🍔 Foodie Hub Restaurant</h3>
 
           <p>
-            Responsive Restaurant Website built using HTML, CSS and JavaScript
-            with modern UI.
+            Responsive Restaurant Website built using HTML, CSS and JavaScript.
           </p>
 
           <div className="tech-tags">
@@ -47,6 +49,7 @@ function Projects() {
           <a
             href="https://github.com/devanshsarvaiya/foodie-hub-restaurant"
             target="_blank"
+            rel="noreferrer"
           >
             View GitHub →
           </a>
@@ -54,6 +57,6 @@ function Projects() {
       </div>
     </section>
   );
-}
+});
 
 export default Projects;

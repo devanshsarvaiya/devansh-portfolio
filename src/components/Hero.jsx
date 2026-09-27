@@ -1,4 +1,11 @@
-function Hero() {
+function Hero({ projectsRef, contactRef }) {
+  const scrollTo = (ref) => {
+    ref.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section id="home" className="hero">
       <div className="hero-content">
@@ -11,18 +18,23 @@ function Hero() {
         <h2>Aspiring AI Full Stack Developer</h2>
 
         <p className="hero-desc">
-          MCA Student passionate about React, AI and
-          building real-world web applications.
+          MCA Student passionate about React, AI and building real-world web applications.
         </p>
 
         <div className="hero-buttons">
-          <a href="#projects" className="btn-primary">
+          <button
+            className="btn-primary"
+            onClick={() => scrollTo(projectsRef)}
+          >
             View Projects
-          </a>
+          </button>
 
-          <a href="#contact" className="btn-outline">
+          <button
+            className="btn-outline"
+            onClick={() => scrollTo(contactRef)}
+          >
             Contact Me
-          </a>
+          </button>
         </div>
       </div>
     </section>
